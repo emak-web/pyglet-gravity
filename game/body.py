@@ -13,3 +13,9 @@ class Body:
         self.velocity += self.acceleration
         self.shape.x += self.velocity.x
         self.shape.y += self.velocity.y
+
+    def select(self):
+        self.shape.color = (255, 0, 0)
+    
+    def unselect(self):
+        self.shape.color = (255, 255, 255)
